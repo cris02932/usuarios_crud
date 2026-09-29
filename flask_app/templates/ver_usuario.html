@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ver Usuario</title>
+</head>
+<body>
+<h1>Usuario {{ usuario.id }}</h1>
+<div>
+    <p>Nombre: {{ usuario.nombre }}</p>
+    <p>Apellido: {{ usuario.apellido }}</p>
+    <p>E-mail: {{ usuario.email }}</p>
+    <p>Fecha Creación: {{ usuario.created_at }}</p>
+    <p>Fecha Actualización: {{ usuario.updated_at }}</p>
+</div>
+<a href="/usuarios/editar/{{ usuario.id }}">Editar</a>
+<a href="/usuarios/{{ usuario.id }}/borrar">Borrar</a>
+<a href="/">Volver</a>
+</body>
+</html>
